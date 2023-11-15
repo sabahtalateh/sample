@@ -4,7 +4,7 @@
         {
             "label": "delve",
             "type": "shell",
-            "command": "dlv debug --headless --api-version=2 --listen=:${config:delve.port} --log ${workspaceFolder}/main.go",
+            "command": "dlv debug --headless --log --api-version=2 --listen=:${config:delve.port} ${workspaceFolder}/main.go",
             "isBackground": true,
             "problemMatcher": {
                 "base": "$go",
