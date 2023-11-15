@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+	"configurations": [
+		{
+            "name": "Launch remote",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            // "remotePath": "${workspaceFolder}",
+            // "cwd": "${workspaceFolder}",
+            "host": "127.0.0.1",
+            "port": "${config:delve.port}",
+            "preLaunchTask": "delve",
+        },
+        {
+            "name": "Launch Go",
+            "type": "go",
+            "request": "launch",
+            "program": "${workspaceFolder}",
+        }
+	],
+}

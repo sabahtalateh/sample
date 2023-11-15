@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "delve",
+            "type": "shell",
+            "command": "dlv debug --headless --api-version=2 --listen=:${config:delve.port} --log ${workspaceFolder}/main.go",
+            "isBackground": true,
+            "problemMatcher": {
+                "base": "$go",
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".*",
+                    "endsPattern": "^API server listening.*"
+                }
+            },
+        },
+        {
+            "label": "foo",
+            "command": "echo helloWorld2.c: warning: implicit declaration of function 'prinft'",
+            "args": [],
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):\\s+(warning|error):\\s+(.*)$",
+                    "kind": "file",
+                    "file": 1,
+                    // "line": 2,
+                    // "column": 3,
+                    "severity": 2,
+                    "message": 3
+                }
+            }
+        }
+    ]
+}
