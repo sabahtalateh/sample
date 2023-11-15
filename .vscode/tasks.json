@@ -15,26 +15,5 @@
                 }
             },
         },
-        {
-            "label": "foo",
-            "command": "echo helloWorld2.c: warning: implicit declaration of function 'prinft'",
-            "args": [],
-            "problemMatcher": {
-                "owner": "cpp",
-                "fileLocation": [
-                    "relative",
-                    "${workspaceFolder}"
-                ],
-                "pattern": {
-                    "regexp": "^(.*):\\s+(warning|error):\\s+(.*)$",
-                    "kind": "file",
-                    "file": 1,
-                    // "line": 2,
-                    // "column": 3,
-                    "severity": 2,
-                    "message": 3
-                }
-            }
-        }
     ]
 }
