@@ -1,7 +1,5 @@
 package main
 
-import "github.com/sabahtalateh/sample/pack"
-
 const X = 234
 
 func main() {
@@ -18,5 +16,5 @@ func main() {
 
 func bub() {
 	print("bub")
-	pack.PFUNC()
+	// pack.PFUNC()
 }
