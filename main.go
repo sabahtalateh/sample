@@ -16,5 +16,4 @@ func main() {
 
 func bub() {
 	print("bub")
-	// pack.PFUNC()
 }
